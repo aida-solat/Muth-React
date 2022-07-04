@@ -8,7 +8,7 @@
 }
 
 .banner {
-  height: 280px;
+  height: 300px;
   position: relative;
 }
 
@@ -53,7 +53,7 @@
 
 .banner .bannerContent .breadCrump {
   display: flex;
-  justify-self: space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -68,7 +68,7 @@
   color: #f1f1f1;
 }
 
-.banner .bannerContent .breadCrump i {
+.banner .bannerContent i {
   color: #f1f1f1;
   font-size: 24px;
   cursor: pointer;
@@ -369,7 +369,7 @@
 
 .musicPlayer .songAttr .top .left,
 .musicPlayer .songAttr .top .middle,
-.musicPlayer .songAttr .bottom .right {
+.musicPlayer .songAttr .top .right {
   color: #595959;
   font-size: 16px;
   cursor: pointer;
@@ -379,7 +379,7 @@
 
 .musicPlayer .songAttr .top .left i,
 .musicPlayer .songAttr .top .middle i,
-.musicPlayer .songAttr .bottom .right i {
+.musicPlayer .songAttr .top .right i {
   margin: 0px 15px;
   font-size: 18px;
 }
@@ -414,6 +414,7 @@
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  overflow: hidden;
 }
 
 .musicPlayer .songAttr .bottom .progressBar:before {
@@ -422,7 +423,7 @@
   top: 0;
   left: 0;
   background: #848484;
-  width: 30%;
+  width: var(--player-played);
   height: 100%;
   border-radius: 10px;
   z-index: 2;
@@ -453,7 +454,7 @@
 
 .musicPlayer .songAttr .bottom .progressBar::-moz-range-progress {
   background: #848484;
-  width: 30%;
+  width: var(--player-played);
   height: 100%;
   border-radius: 10px;
   z-index: 2;
@@ -471,8 +472,88 @@
 }
 
 .musicPlayer .songAttr .bottom .currentTime,
-.musicPlayer .songAttr .bottom .duration {
+.musicPlayer .songAttr .bottom .totalTime {
   color: #595959;
   font-size: 14px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+  .mainContainer {
+    min-width: 380px;
+  }
+
+  .content {
+    padding: 10px 15px;
+  }
+
+  .banner .bannerContent .breadCrump P {
+    font-size: 12px;
+  }
+
+  .banner .bannerContent .breadCrump i {
+    font-size: 14px;
+  }
+
+  .banner .bannerContent .artist .left .name h2 {
+    font-size: 25px;
+  }
+
+  .banner .bannerContent .artist .right a {
+    padding: 5px 15px;
+    font-size: 12px;
+    margin: 0 10px;
+  }
+
+  .mainContainer .menuList ul li {
+    margin: 0 5px;
+  }
+
+  .mainContainer .menuList ul li a {
+    font-size: 14px;
+  }
+
+  .mainContainer .menuList p {
+    font-size: 12px;
+  }
+
+  .mainContainer .menuList p i {
+    font-size: 10px;
+  }
+
+  .mainContainer .menuList p span {
+    margin-left: 0px;
+    font-size: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  .mainContainer .menuList {
+    padding: 10px 15px;
+  }
+
+  .audioList {
+    padding: 10px 5px;
+  }
+
+  .audioList .songsContainer .songs .song .section {
+    flex-direction: column;
+  }
+
+  .audioList .songsContainer .songs .song .section .songName {
+    width: 100%;
+  }
+
+  .audioList .songsContainer .songs .song .section .hits {
+    margin-left: 0;
+    margin-top: 5px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Banner {
+    height: 240px !important;
+    position: relative;
+  }
 }
