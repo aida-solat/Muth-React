@@ -428,3 +428,51 @@
   z-index: 2;
   transition: all 0.5s ease;
 }
+
+.musicPlayer .songAttr .bottom .progressBar::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.musicPlayer .songAttr .bottom .progressBar::-moz-range-track {
+  width: 80%;
+  position: relative;
+  height: 5px;
+  outline: none;
+  border: none;
+  appearance: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.musicPlayer .songAttr .bottom .progressBar::-moz-range-progress {
+  background: #848484;
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+.musicPlayer .songAttr .bottom .progressBar::-moz-range-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.musicPlayer .songAttr .bottom .currentTime,
+.musicPlayer .songAttr .bottom .duration {
+  color: #595959;
+  font-size: 14px;
+  font-weight: bold;
+}
