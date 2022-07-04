@@ -87,7 +87,7 @@ function MusicPlayer(props) {
           </div>
           <div className="bottom">
             <div className="currentTime">00:00:00</div>
-            <input type="range" />
+            <input type="range" className="progressBar" />
             <div className="totalTime">00:00:00</div>
           </div>
         </div>
