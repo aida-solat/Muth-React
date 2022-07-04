@@ -26,6 +26,16 @@ function MusicPlayer(props) {
     setDuration(seconds);
   }, [audioPlayer?.current?.loadedmetadata, audioPlayer.current.readyState]);
 
+  const CalculateTime = (sec) => {
+    const minutes = Math.floor(sec / 60);
+    const returnMinutes = minutes < 10 ? `0${minutes}` : minutes;
+
+    const seconds = Math.floor(sec % 60);
+    const returnSeconds = seconds < 10 ? `0${seconds}` : seconds;
+
+    return `${returnMinutes}:${returnSeconds}`;
+  };
+
   const changeLoved = () => {
     setLoved(!isLove);
   };
@@ -106,7 +116,11 @@ function MusicPlayer(props) {
           <div className="bottom">
             <div className="currentTime">00:00:00</div>
             <input type="range" className="progressBar" ref={progressBar} />
-            <div className="totalTime">{duration}</div>
+            <div className="totalTime">
+              {duration && !isNaN(duration) && CalculateTime(duration)
+                ? CalculateTime(duration)
+                : "00:00"}
+            </div>
           </div>
         </div>
       </div>
