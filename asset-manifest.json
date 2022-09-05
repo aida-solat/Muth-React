@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Muth-React/static/css/main.1a8aef90.css",
+    "main.js": "/Muth-React/static/js/main.b86d273b.js",
+    "static/js/787.4f0dc878.chunk.js": "/Muth-React/static/js/787.4f0dc878.chunk.js",
+    "static/media/artist.jpg": "/Muth-React/static/media/artist.1162a757da452033436f.jpg",
+    "static/media/background.jpg": "/Muth-React/static/media/background.8b16878b58cd04fe945c.jpg",
+    "static/media/profile.jpg": "/Muth-React/static/media/profile.b6c77859756c7c7e8a1f.jpg",
+    "static/media/track.png": "/Muth-React/static/media/track.bddb5792891bf59741a8.png",
+    "index.html": "/Muth-React/index.html",
+    "main.1a8aef90.css.map": "/Muth-React/static/css/main.1a8aef90.css.map",
+    "main.b86d273b.js.map": "/Muth-React/static/js/main.b86d273b.js.map",
+    "787.4f0dc878.chunk.js.map": "/Muth-React/static/js/787.4f0dc878.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8aef90.css",
+    "static/js/main.b86d273b.js"
+  ]
+}
