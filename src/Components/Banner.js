@@ -1,3 +1,4 @@
+
 import React from "react";
 import "../Styles/MainContainer.css";
 import Artist from "../img/artist.jpg";
@@ -32,8 +33,11 @@ function Banner() {
               11,184,1811 <span>Monthly listeners</span>
             </p>
           </div>
+          
           <div className="right">
+           
             <a href="#">Play</a>
+           
             <a href="#">
               <i>
                 <FaCheck />
